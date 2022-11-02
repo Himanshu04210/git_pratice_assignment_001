@@ -1,15 +1,16 @@
 function isPrime(number){
-	count=0;
-	for(let i=1; i<=number; i++){
+	factors=0;
+	for(let i=2; i<=number-1; i++){
 		if(number%i==0){
-			count++ 
+			factors++;
+			break; 
 		}
 	}
-     return count;
+     return factors;
 }
 
 let ans = isPrime(7);
-if(ans==2){
+if(ans==0){
 	console.log("Prime Number")
 }else{
 	console.log("Not a Prime Number")
