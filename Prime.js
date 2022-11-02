@@ -1,11 +1,11 @@
 function isPrime(number){
-	count=0;
+	factors=0;
 	for(let i=1; i<=number; i++){
 		if(number%i==0){
-			count++ 
+			factors++ 
 		}
 	}
-     return count;
+      return factors;
 }
 
 let ans = isPrime(7);
